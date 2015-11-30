@@ -6,6 +6,7 @@
 #include <string>
 #include "Gamestatus.h"
 #include "Tilemap.h"
+#include "Character.h"
 
 using namespace std;
 
@@ -16,9 +17,17 @@ int main() {
 
 	//Pelitilan olio
 	Gamestatus				gs;
-
+	
+	//Ensimmäisen kentän luonti
 	Tilemap					lvl1;
 
+	//Characterin luonti
+	sf::Texture pTexture;
+	if (!pTexture.loadFromFile("liikkeet.png")) {
+		cerr << "Texture Error" << endl;
+	}
+
+	Character				p1(pTexture);
 
 	//LEVEL1 Tilemapin alustus
 	lvl1.init();
@@ -44,6 +53,25 @@ int main() {
 			lvl1.drawTilemap(window);
 
 
+			//Pelaajan piirto ja ohjaus
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) //move up
+			{
+				p1.moveUp();
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) //move down
+			{
+				p1.moveDown();
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) //move right
+			{
+				p1.moveRight();
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) //move left
+			{
+				p1.moveLeft();
+			}
+
+			window.draw(p1);
 			window.display();
 		}
 	}
