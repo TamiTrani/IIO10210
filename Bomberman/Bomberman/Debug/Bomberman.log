@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Build started 1.12.2015 16:45:37.
      1>Project "G:\olio2\IIO10210\IIO10210\Bomberman\Bomberman\Bomberman.vcxproj" on node 2 (Build target(s)).
      1>Link:
@@ -7,3 +8,21 @@
 Build succeeded.
 
 Time Elapsed 00:00:00.06
+=======
+﻿Build started 29.11.2015 22:17:46.
+     1>Project "C:\Users\Huuhka\Desktop\koulujutut\C++harkka\IIO10210\Bomberman\Bomberman\Bomberman.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\New folder\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Huuhka\Desktop\koulujutut\C++harkka\IIO10210\Bomberman\Debug\Bomberman.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\New folder\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Huuhka\Desktop\koulujutut\C++harkka\IIO10210\Bomberman\Debug\Bomberman.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Huuhka\Desktop\koulujutut\C++harkka\IIO10210\Bomberman\Debug\Bomberman.lib" /MACHINE:X86 Debug\Character.obj
+         Debug\Gamestatus.obj
+         Debug\main.obj
+         Debug\Tilemap.obj
+         Bomberman.vcxproj -> C:\Users\Huuhka\Desktop\koulujutut\C++harkka\IIO10210\Bomberman\Debug\Bomberman.exe
+     1>Done Building Project "C:\Users\Huuhka\Desktop\koulujutut\C++harkka\IIO10210\Bomberman\Bomberman\Bomberman.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.99
+>>>>>>> 87e24d60fd19b73b7c242fc1dd096db6ec4ec7f7

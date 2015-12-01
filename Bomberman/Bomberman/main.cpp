@@ -22,7 +22,11 @@ int main() {
 
 	//Pelitilan olio
 	Gamestatus				gs;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 87e24d60fd19b73b7c242fc1dd096db6ec4ec7f7
 	//Ensimmäisen kentän luonti
 	Tilemap					lvl1;
 
@@ -33,7 +37,10 @@ int main() {
 	}
 
 	Character				p1(pTexture);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87e24d60fd19b73b7c242fc1dd096db6ec4ec7f7
 
 	//LEVEL1 Tilemapin alustus
 	lvl1.init();
@@ -62,6 +69,7 @@ int main() {
 			//Pelaajan piirto ja ohjaus
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) //move up
 			{
+<<<<<<< HEAD
 				if (call < movefactor * 1) p1.moveUp(0); 
 				else if (call < movefactor * 2) p1.moveUp(40);
 				else p1.moveUp(80);
@@ -96,6 +104,23 @@ int main() {
 			{
 			
 			}
+=======
+				p1.moveUp();
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) //move down
+			{
+				p1.moveDown();
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) //move right
+			{
+				p1.moveRight();
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) //move left
+			{
+				p1.moveLeft();
+			}
+
+>>>>>>> 87e24d60fd19b73b7c242fc1dd096db6ec4ec7f7
 			window.draw(p1);
 			window.display();
 		}

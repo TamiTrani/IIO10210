@@ -18,7 +18,9 @@ void Tilemap::init() {
 
 			string loader;
 			openfile >> loader;
+			//Lukee tekstitiedoston "soluja" ja erottelee arvot ottaen x ja y arvon. 0,0 esimerkiksi ensimmäinen nolla on x koord ja toinen on y koord.
 			char x = loader[0], y = loader[2];
+
 			if (!isdigit(x) || !isdigit(y))
 				map[loadCounter.x][loadCounter.y] = sf::Vector2i(-1, -1);
 			else

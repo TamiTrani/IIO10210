@@ -158,6 +158,10 @@
     <ClCompile Include="Tilemap.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="bomb.h" />
+>>>>>>> 87e24d60fd19b73b7c242fc1dd096db6ec4ec7f7
     <ClInclude Include="character.h" />
     <ClInclude Include="Gamestatus.h" />
     <ClInclude Include="Tilemap.h" />
